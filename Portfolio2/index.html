@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  < data-spy="scroll" data-target="#nav-scroll" data-offset="56">
+    <header class="header" id="home">
+      <!---------------------  NavBar ------------------------------------------------------------------------->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+        id="nav-scroll"
+      >
+        <div class="container">
+          <a href="#" class="navbar-brand">Created by Mark</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-----------------------------Navbar Links right hand side------------------------------------------------------------- -->
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="#home" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--    ----------------------------End Navbar ------------------------------------------------------>
+
+      <!-----------------------------------JumboTron---------------------------------------------------------->
+      <div class="cover container-fluid text-white">
+        <div
+          class="cover-content d-flex flex-column justify-content-center align-items-center"
+        >
+          <img id="one" src="img/yellow.jpg" alt="" class="rounded-circle" />
+          
+          <h1 id="firsth" class="display-2 text-capitalize pt-4 pt-md-0">
+            Mark Seto Portfolio
+          </h1>
+          <h6 id="buddy" class="pt-3 h4">Budding Web Designer</h6>
+          <button id="no-butt">Click Here for Nothing</button>
+        </div>
+      </div>
+    </header>
+
+    <!--NOTES ---->
+<!-- I use d-flex to create a flexbox container and to transform direct children into flex items-->
+<!-- Also used .flex-column to display the flex items vertically (on top of each other)  -->
+<!--  text-capitalize only changes the first letter of each word, leaving the case of any other letters unaffected.
+rounded-circle rounds the corners into a circle  -->
+
+    <!------------------------------------Portfolio mid section------------------------------------------------------------>
+    <section class="container py-5" id="portfolio">
+      <div class="section-title text-center pt-2">
+        <h4 class="h1 pb-2">Portfolio</h4>
+        <p class="text-muted">
+          I live here in Hong Kong where I am studying web development at
+          Xcelerate boot camp. I am working on my portfolio projects and hope to
+          post them soon.
+        </p>
+      </div>
+      <div class="row pt-5">
+        <div class="col-lg-4 col-md-6 mb-5">
+          <img src="img/books.jpg" alt="" class="img-fluid img-thumbnail" />
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5">
+          <img src="img/opera.jpg" alt="" class="img-fluid img-thumbnail" />
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5">
+          <img src="img/hksky.jpg" alt="" class="img-fluid img-thumbnail" />
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5">
+          <img src="img/image33.jpg" alt="" class="img-fluid img-thumbnail" />
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5">
+          <img
+            src="img/IMG-20160125-WA0000.jpg"
+            alt=""
+            class="img-fluid img-thumbnail"
+          />
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5">
+          <img src="img/k11.jpg" alt="" class="img-fluid img-thumbnail" />
+        </div>
+      </div>
+    </section>
+
+<!-- NOTES ---->
+<!-- Used .img-fluid class to create responsive image.  The image will then scale to the parent element.-->
+<!--The .img-thumbnail class shapes the image to a thumbnail  with border-->
+
+    <!-------------------------------------About Me section---------------------------------------------------------------->
+    <section class="about" id="about">
+      <div class="container about-content py-5">
+        <div class="section-title text-center pt-2">
+          <h4 class="h1 pb-2">About Me</h4>
+          <p class="text-muted">
+            I live here in Hong Kong where I am studying to be a web developer.
+            I came from the Unites States where I used to live in New York City.
+            I work in the finance and accounting profession where I prepare
+            financial data and tax forms.
+          </p>
+        </div>
+
+        <!------------------------------Objective and Plans ---------------------------------------->
+        <div class="row">
+          <div class="col-md-6 pt-5 pb-3">
+            <h3 class="text-center pb-3">My Objective and Plans</h3>
+            <p class="text-muted pt-2">
+              I am learning HTML CSS and Javascript. I hope to be more
+              proficient in React and MongoDB, as well as learn more about Node
+              and Express.
+            </p>
+            <p class="text-muted">
+              I hope to develop a web app for Fintech companies and financial
+              service firms to help them better organize and analyze their data.
+            </p>
+          </div>
+
+          <!--  --------------------------------------Progress Bars---------------------------->
+          <div class="col-md-6 pt-5 pb-3">
+            <h3 class="text-center pb-3">What Skills Do I Have??</h3>
+
+            <h6>HTML:</h6>
+            <div class="progress my-2 border border-primary bg-white">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 25%"
+              >
+                25%
+              </div>
+            </div>
+
+            <h6>CSS:</h6>
+            <div class="progress my-2 border border-success bg-white">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                role="progressbar"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 20%"
+              >
+                20%
+              </div>
+            </div>
+
+            <h6>JS:</h6>
+            <div class="progress my-2 border border-warning bg-white">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                role="progressbar"
+                aria-valuenow="62"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 10%"
+              >
+                10%
+              </div>
+            </div>
+
+            <h6>Bootstrap 4:</h6>
+            <div class="progress my-2 border border-danger bg-white">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                role="progressbar"
+                aria-valuenow="20"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 20%"
+              >
+                20%
+              </div>
+            </div>
+
+            <h6>Jquery and Ajax:</h6>
+            <div class="progress my-2 border border-info bg-white">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated bg-info"
+                role="progressbar"
+                aria-valuenow="20"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 10%"
+              >
+                10%
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-------------------------------------------Contact Me------------------------------------------------------------------->
+    <section class="contact" id="contact">
+      <div class="container py-5">
+        <div class="section-title text-center pt-2">
+          <h4 class="h1 pb-2">Contact Me</h4>
+          <p class="text-muted">
+            Feel free to reach out to me and let me know what (if anything) I
+            can do for you. I like answering questions and love to be of support
+          </p>
+        </div>
+        <div class="row">
+          <form action="#" class="col-md-10 mx-auto py-5">
+            <div class="form-group">
+              <label for="#">Name</label>
+              <input type="text" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="#">Email Address</label>
+              <input type="email" class="form-control" />
+              <small class="form-text text-muted"
+                >I won't tell anyone your email. But if I do, I'll lie to you and say I didn't do it</small
+              >
+            </div>
+            <div class="form-group">
+              <label for="#">Message</label>
+              <input type="text" class="form-control" />
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" />
+              <label for="#" class="form-check-label"
+                >Click on me. Nothing will happen</label
+              >
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!----------------------------------Footer --------------------------------------------------------------------->
+    <footer class="text-center bg-dark py-3">
+      <p class="text-white mb-0">Made by Mark Seto under Xcelerate</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="mark.js"></script>
+
+    <!-- <script src="jquery.js"></script> -->
+    <script src="bootstrap.min.js"></script>
+  </body>
+</html>

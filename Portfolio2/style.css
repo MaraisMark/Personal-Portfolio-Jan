@@ -1,0 +1,130 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* the linear-gradient serves to darken the background image and add some color hue*/
+.cover {
+  background: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)),
+    url(img/background.jpg);
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.covernew {
+  background: linear-gradient(
+      rgba(168, 144, 144, 0.24),
+      rgba(207, 67, 67, 0.24)
+    ),
+    url(img/paris.jpg);
+  /* transform: rotate(270deg) scale(1.1); */
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.cover-content {
+  min-height: 100vh;
+}
+.cover-content img {
+  max-width: 200px;
+  border: 2px double #fff;
+}
+
+.two {
+}
+h1 {
+  font-style: italic;
+  text-shadow: 5px 5px #ff0000;
+  font-size: 80px;
+  color: rgb(9, 2, 27);
+}
+
+#no-butt {
+  color: rgb(49, 41, 23);
+  /* border: solid; */
+  border-radius: 22px;
+  margin-top: 25px;
+  padding: 8px 10px;
+  background-color: #afd8af;
+  width: 190px;
+  height: 60px;
+}
+
+#firsth {
+  /* font: outline; */
+  font-family: "Lucida Sans", sans-serif;
+  font-style: italic;
+  /* text-shadow: 5px 5px #0cb336; */
+  font-size: 90px;
+  /* padding: 300px 300px 2000px 300px; */
+  color: rgb(27, 2, 2);
+  text-transform: none;
+  /* font-size: 2em; */
+  letter-spacing: 4px;
+  /* overflow: hidden; */
+  background: linear-gradient(45deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  /* animation: animate 3s linear infinite; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+.firsth22 {
+  font: outline;
+  font-family: "Lucida Sans", sans-serif;
+  font-style: italic;
+  text-shadow: 5px 5px #0cb336;
+  font-size: 150%;
+  /* padding: 300px 300px 2000px 300px; */
+  color: rgb(27, 2, 2);
+  text-transform: none;
+  /* font-size: 2em; */
+  letter-spacing: 4px;
+  /* overflow: hidden; */
+  /* background: linear-gradient(45deg, #000, #fff, #000); */
+  /* background-repeat: no-repeat; */
+  /* background-size: 80%; */
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(70, 16, 16, 0);
+}
+.firsth23 {
+  font: outline;
+  font-family: "Arial", sans-serif;
+  font-style: italic;
+  text-shadow: 5px 5px #0cb336;
+  font-size: 150%;
+  /* padding: 300px 300px 2000px 300px; */
+  color: rgb(27, 2, 2);
+  text-transform: none;
+  /* font-size: 2em; */
+  letter-spacing: 4px;
+  /* overflow: hidden; */
+  /* background: linear-gradient(45deg, #000, #fff, #000); */
+  /* background-repeat: no-repeat; */
+  /* background-size: 80%; */
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+.about {
+  background-color: #abd1b3;
+}
+@media only screen and (max-width: 768px) {
+  .cover-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  .cover-content h6 {
+    font-size: 15px;
+  }
+}
